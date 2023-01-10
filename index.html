@@ -1,0 +1,40 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>DOM</title>
+	<script type="text/javascript">
+		
+		function clickme()
+		{
+			document.getElementById("t1").style.backgroundColor="violet";
+		}
+		function callme()
+		{
+			var x = document.getElementsByClassName("c1");
+			x[0].style.color="blue";
+			x[1].style.fontSize="20px";
+		}
+		function mouse()
+		{
+			var y = document.getElementsByTagName("h1");
+			y[0].style.backgroundColor="blue";
+			y[1].style.backgroundColor="red";
+			
+		}
+		
+		
+		</script>
+</head>
+		<body>
+			<div id="t1" style = "background-color:pink; height:100px; width:150px" ondblclick="clickme()"><h2>Hello</h2></div><br>
+			
+			<div class="c1" style = "background-color:salmon ; height:100px; width:150px"onclick="callme()">kavya</div>
+			<div class="c1" style = "background-color:lavender; height:100px; width:150px"onclick="callme()">adhi</div>
+			
+			<!-- <input type="button" value="click" onclick="callme()"/> -->
+			
+			<h1 onmouseover="mouse()">kavya kannan</h1>
+			<h1 onmouseover="mouse()">kannan kavya</h1>
+			
+		</body>
+</html>
